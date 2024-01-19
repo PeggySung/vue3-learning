@@ -1,0 +1,127 @@
+@import "./variable.styl"
+
+*:not(i)
+    font-family 'Microsoft YaHei', Arial, sans-serif !important
+html
+    background-color #F0F3F5
+body
+    margin 0
+    width 100%
+    height 100%
+    overflow hidden
+
+.full-height-width
+    height 100%
+    width 100%
+
+.custom-header
+    height $headerHeight !important
+    width 100%
+    position fixed
+    border-bottom 1px solid #c8ced3
+    padding 0
+    top 0
+    bottom 0
+    left 0
+    overflow-y hidden
+    overflow-x hidden
+    background-color white
+
+.body-container
+    margin-top $headerHeight
+    height "calc(100% - %s)" % $headerHeight
+    width 100%
+    position fixed
+    left 0
+    top 0
+
+.content-container
+    display block
+    position relative
+    width 80vw
+
+.custom-footer
+    background-color #f0f3f5
+    width 100%
+    border-top 1px solid #c8ced3
+    height $footerHeight !important
+    margin-bottom 15px // FIXME
+
+.custom-breadcrumb
+    display flex
+    justify-content flex-start
+    align-items center
+    height $breadcrumbHeight
+    background-color #f0f3f5
+    border-bottom 1px solid #c8ced3
+
+.custom-scrollbar
+    height 100%
+    width $menuWidth
+
+.el-aside-custom
+    width auto !important
+    min-width $menuWidth
+    max-width $menuWidth
+    overflow hidden
+    &.collapse
+        min-width 0
+        max-width 44px
+
+.el-menu-vertical-trader
+    background-color $menuBackgroundColor
+    height 94vh
+    color #fff
+    border-right 0 !important
+
+.el-main-custom
+    background-color #e4e5e6
+    height 1px
+
+.el-card-custom
+    min-height 100%
+
+.el-dialog__body 
+  padding 0px 20px !important
+
+.buttons
+  text-align: right
+  
+.buttons-top 
+  text-align: right
+  margin-top: 10px;
+
+.center
+  text-align: center
+
+.width 
+  width 100%
+
+.pageTable__header
+  font-size medium
+  vertical-align middle
+
+.el-badge__content.is-fixed 
+    right: calc(6px + var(--el-badge-size)/ 2) !important
+
+.el-pagination 
+  justify-content center
+  margin-top 20px
+  
+.pageTable 
+  margin-top 10px
+
+.badge
+  margin 8px 0px 8px 20px;
+  
+.header 
+  margin-bottom 10px
+
+.el-overlay-dialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden !important;
+}
