@@ -19,8 +19,8 @@
 </template>
 
 <script setup>
-import TheHeader from './layout/TheHeader.vue'
-import TheMenu from './layout/TheMenu.vue'
+import TheHeader from '@/views/layout/TheHeader.vue'
+import TheMenu from '@/views/layout/TheMenu.vue'
 </script>
 
 <style scoped>

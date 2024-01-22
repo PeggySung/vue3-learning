@@ -1,10 +1,10 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Index from '../views/Index.vue'
-import Home from '../views/Home.vue'
+import { createRouter, createWebHashHistory } from 'vue-router'
+import Index from '@/views/Index.vue'
+import Home from '@/views/Home.vue'
 import taskRoutes from './taskRoutes'
 
 export const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
@@ -17,3 +17,4 @@ export const router = createRouter({
   ],
 })
 
+export default router
